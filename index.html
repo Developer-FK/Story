@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="story.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Story</title>
+
+</head>
+<body>
+    <header>
+
+        <div align= "center" class="top-img">
+            <img src="./images/story.png" alt="story-logo" width="160" height="100">
+
+        </div>
+
+        <div class="form-container">
+            <p id ="story-head" style="color:         rgb(133 255 177);">Complete the form- <br> Complete the story</p>
+            <br>
+            <hr>
+            <form action="" id="story-form">
+
+                <label for="animal">Animal:</label> <br>
+                <input type="text" id="animal" required placeholder="Please fill"> <br><br>
+
+                <label for="another-animal">Another animal:</label> <br>
+                <input type="text" id="another-animal" required placeholder="Please fill"> <br><br>
+
+                <label for="more-animal">One more animal:</label><br>
+                <input type="text" id="more-animal" required placeholder="one more animal"> <br><br>
+
+                <label for="adj">Adjective(past tense):</label><br>
+                <input type="text" id="adj" required placeholder="Adjective(past tense)"> <br><br>
+
+                <label for="verb">Verb [ends in -ing]:</label><br>
+                <input type="text" id="verb" required placeholder="Verb [ends in -ing]"> <br><br>
+
+                <label for="num">Number:</label> <br>
+                <input type="number" id="num" required placeholder="put any desired no."> <br><br>
+
+                <label for="">Yes or No: </label><br> 
+                
+                <input type="radio" name="yesno" id="Yes" value = "Yes" required> 
+                <label for="Yes">Yes</label>
+                <input type="radio" name="yesno" id="No" value = "No" required> 
+                <label for="No">No</label> <br><br>
+
+                <label for="sel">Relative Speed [ends in -er]:</label><br>
+                <select name="speed" id="sel" required>
+                    <option value="Faster">Faster</option>
+                    <option value="Slower">Slower</option>
+                    <option value="Normal">Normal</option>
+
+                </select><br><br>
+
+                <label for="moto">Motivational Quote:</label><br>
+                <input type="text" id="moto" list="motivational" required>
+                <datalist id="motivational" name ="datali">
+                    <option value="Cedcommerce"></option>
+                    <option value="Non profitable"></option>
+                    <option value="Productive"></option>
+                    <option value="Start "></option>
+
+                </datalist>
+                 <br><br>
+
+                <label for="message">Meaningful Message:</label> <br>
+                <textarea name="" id="message" cols="30" rows="2" required placeholder="Important message"></textarea>
+
+                <br>
+
+                <button type="submit">Form Story</button>
+
+                
+
+                
+                
+
+            </form>
+        </div>
+        
+    </header>
+
+    <script src="story.js"></script>
+</body>
+</html>
